@@ -1,0 +1,85 @@
+@media (max-width: 600px) and (orientation: landscape){
+
+    .container{
+        padding: 3rem 5rem;
+    }
+
+    .weather__content{
+        height: initial;
+    }
+
+    .weather__contet--opcion h3{
+        letter-spacing: .2rem;
+    }
+
+    .weather__content--logo{
+        margin: 2rem 0 ;
+    }
+    
+}
+
+
+@media (min-width: 601px) and (max-width:900px){
+
+    .weather__content{
+        height: inherit;
+    }
+
+    .weather__content--logo{
+        margin: 10rem 0 ;
+    }
+    
+    .container{
+        padding: 3rem 5rem;
+    }
+
+    .weather__contet--opcion h3{
+        letter-spacing: .2rem;
+    }
+
+    .weather__message{
+        height: 100vh;
+    }
+
+    .weather__message--response{
+        height: 10%;
+        bottom: 0;
+    }
+
+}
+
+@media (min-width: 901px){
+    .weather{
+        height: 100vh;
+    }
+
+    .container{
+        padding: 3rem 10rem;
+    }
+
+    .weather__content--title h2{
+        letter-spacing: .4rem;
+        font-size: 4.5rem;
+        font-weight: 400;
+    }
+
+    .weather__content--title p{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .weather__content--temp h1{
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+
+    .weather__contet--opcion{
+        justify-content: space-evenly;
+    }
+
+    .weather__contet--opcion h3{
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheater Aplicaction</title>
+    <!--Css Style-->
+    <link rel="stylesheet" href="Css/App.css">
+    <!-- Reset Css-->
+    <link rel="stylesheet" href="Css/Reset.css">
+    <!-- App Js-->
+    <script defer src="Js/App.js"></script>
+    <!-- Font Awesome Css-->
+    <script src="https://kit.fontawesome.com/78a1a09454.js" crossorigin="anonymous"></script>
+    <!-- Responsive-->
+    <link rel="stylesheet" href="Css/Responsive.css">
+</head>
+<body>
+    <div class="loading-page" id="onload">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> 
+    </div> 
+    <section class="weather">
+        <div class="weather__content container" id="weather">
+            <div class="weather__content--Search">
+               <input  id ="city" type="text" placeholder="Enter city">
+               <input type="button" value="Search" id="search">
+            </div>
+            <div class="weather__content--logo">
+                <h1>App <span> Wheater </span> </h1>
+            </div>
+            <div class="weather__content--results">
+                <div class="weather__content--title">
+                    <h2 id="name"></h2>
+                    <p id="fecha"></p>
+                </div>
+                <div class="weather__content--temp" id="temp_box">
+                    <h1 id="temp"></h1>
+                </div>
+                <div class="weather__content--description">
+                    <img id="icon"></img>
+                    <h3 id="descripcion"></h3>   
+                </div>
+                <div class="weather__contet--opcion hidden">
+                    <div>
+                        <h3>Humidity</h3>
+                        <i class="fa-solid fa-droplet"></i>
+                        <p id="humidity"></p>
+                    </div>
+                    <div>
+                        <h3>Pressure</h3>
+                        <i class="fa-solid fa-p"></i>
+                        <p id="pressure"></p>
+                    </div>
+                    <div>
+                        <h3>Speed W.</h3>
+                        <i class="fa-solid fa-wind"></i>
+                        <p id="speed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather__message container">
+            <div class="weather__message--response">
+                <i id="ico_message"></i>
+                <p id="message"></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
